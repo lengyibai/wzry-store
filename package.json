@@ -1,0 +1,41 @@
+{
+  "name": "uniapp-vue3-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "eslint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
+    "prettier": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
+    "stylelint": "stylelint \"./**/*.{css,less,vue,html}\" --fix"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "3.0.0-alpha-3040520220413002",
+    "@dcloudio/uni-components": "3.0.0-alpha-3040520220413002",
+    "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3040520220413002",
+    "axios": "^0.27.2",
+    "pinia": "^2.0.25",
+    "uniapp-axios-adapter": "^0.2.3",
+    "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3040520220413002",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.8.0",
+    "less": "^4.1.3",
+    "less-loader": "^11.1.0",
+    "prettier": "^2.8.1",
+    "stylelint": "^14.16.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recommended-less": "^1.0.4",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard-vue": "^1.0.0",
+    "stylelint-less": "^1.0.6",
+    "stylelint-order": "^5.0.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.5",
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^0.24.3"
+  }
+}

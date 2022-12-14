@@ -1,0 +1,8 @@
+/dist/*
+/node_modules/**
+
+**/*.svg
+**/*.md
+
+/public/*
+src/utils/index.ts
