@@ -1,50 +1,32 @@
 {
-  "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-    {
-      "path": "pages/login/login",
+  "pages": [{
+      "path": "pages/Home/index",
       "style": {
-        "navigationBarTitleText": "登录",
-        "navigationStyle": "custom"
+        "navigationBarTitleText": "主页"
       }
     },
     {
-      "path": "pages/tabBar/hero/hero",
+      "path": "pages/Lottery/index",
       "style": {
-        "navigationBarTitleText": "英雄",
-        "enablePullDownRefresh": false,
-        "navigationStyle": "default"
+        "navigationBarTitleText": "夺宝"
       }
     },
     {
-      "path": "pages/tabBar/skin/skin",
+      "path": "pages/Car/index",
       "style": {
-        "navigationBarTitleText": "皮肤",
-        "enablePullDownRefresh": false,
-        "navigationStyle": "default"
+        "navigationBarTitleText": "购物车"
       }
     },
     {
-      "path": "pages/tabBar/item/item",
+      "path": "pages/My/index",
       "style": {
-        "navigationBarTitleText": "备战",
-        "enablePullDownRefresh": false,
-        "navigationStyle": "default"
+        "navigationBarTitleText": "我的"
       }
     },
     {
-      "path": "pages/tabBar/me/me",
+      "path": "pages/Home/childViews/heroInfo/index",
       "style": {
-        "navigationBarTitleText": "我的",
-        "enablePullDownRefresh": false,
-        "navigationStyle": "default"
-      }
-    },
-    {
-      "path": "pages/hero/heroInfo/heroInfo",
-      "style": {
-        "navigationBarTitleText": "",
-        "enablePullDownRefresh": false
+        "navigationBarTitleText": "英雄详情"
       }
     }
   ],
@@ -59,30 +41,29 @@
     "selectedColor": "#1195db",
     "borderStyle": "black",
     "backgroundColor": "#1a1a1a",
-    "list": [
-      {
-        "text": "英雄",
+    "list": [{
+        "text": "主页",
         "iconPath": "static/tabBar/hero.png",
         "selectedIconPath": "static/tabBar/hero_select.png",
-        "pagePath": "pages/tabBar/hero/hero"
+        "pagePath": "pages/Home/index"
       },
       {
-        "text": "皮肤",
+        "text": "夺宝",
         "iconPath": "static/tabBar/skin.png",
         "selectedIconPath": "static/tabBar/skin_select.png",
-        "pagePath": "pages/tabBar/skin/skin"
+        "pagePath": "pages/Lottery/index"
       },
       {
-        "text": "备战",
+        "text": "购物车",
         "iconPath": "static/tabBar/item.png",
         "selectedIconPath": "static/tabBar/item_select.png",
-        "pagePath": "pages/tabBar/item/item"
+        "pagePath": "pages/Car/index"
       },
       {
         "text": "我的",
         "iconPath": "static/tabBar/me.png",
         "selectedIconPath": "static/tabBar/me_select.png",
-        "pagePath": "pages/tabBar/me/me"
+        "pagePath": "pages/My/index"
       }
     ]
   },
