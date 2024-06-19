@@ -1,6 +1,5 @@
 module.exports = {
-  endOfLine: "crlf",
-  printWidth: 120,
-  semi: true
+  endOfLine: "auto",
+  semi: true,
+  printWidth: 100,
 };
-

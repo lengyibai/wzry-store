@@ -1,7 +1,9 @@
-<template>
-  <view class="me"> </view>
-</template>
-
 <script setup lang="ts"></script>
 
-<style lang="less" scoped></style>
+<template>
+  <view class="my"></view>
+</template>
+
+<style lang="less" scoped>
+@import url("./index.less");
+</style>

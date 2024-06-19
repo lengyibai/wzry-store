@@ -1,8 +1,7 @@
-/dist/*
-/node_modules/**
-
-**/*.svg
-**/*.md
-
-/public/*
-src/utils/index.ts
+*.md
+*.svg
+*.ttf
+*.woff
+dist
+node_modules
+Test

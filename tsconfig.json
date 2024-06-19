@@ -1,23 +1,27 @@
 {
   "compilerOptions": {
+    "strict": true,
     "baseUrl": "./",
     "allowJs": true,
     "isolatedModules": true,
-    "skipLibCheck": true,
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "target": "esnext",
-    "useDefineForClassFields": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "strict": true,
-    "jsx": "preserve",
-    "sourceMap": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "lib": ["esnext", "dom"],
-    "types": ["@dcloudio/types"]
+    "skipLibCheck": true,
+    "target": "esnext",
+    "noEmit": true,
+    "types": ["node", "vite/client"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src/**/*.ts", "src/typings/*.d.ts", "src/**/*.vue"]
+  "include": [
+    "*.d.ts",
+    "./src/**/*.ts",
+    "./src/**/*.d.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.vue",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules", "dist", "**/*.js"]
 }

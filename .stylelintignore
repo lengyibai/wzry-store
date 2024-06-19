@@ -1,3 +1,5 @@
-src/components/**
 dist
 public
+Test
+Temp
+*.html

@@ -1,58 +1,72 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
-    es2021: true,
     node: true,
+    es6: true,
   },
   extends: [
-    "eslint:recommended",
-    "plugin:vue/vue3-essential",
+    "plugin:vue/vue3-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
   ],
   parser: "vue-eslint-parser",
   parserOptions: {
-    ecmaVersion: "latest",
     parser: "@typescript-eslint/parser",
+    ecmaVersion: 2020,
     sourceType: "module",
   },
-  plugins: ["vue", "@typescript-eslint"],
+  plugins: ["import"],
   rules: {
-    camelcase: "off",
-    semi: "off", //额外的分号
-    "no-undef": "off",
-    "no-unused-vars": "off",
-    "comma-dangle": "off", //尾随的逗号
-    "import/no-self-import": "off", //禁止调用引入自身
-    "no-underscore-dangle": "off", //禁止标识符中有悬空下划线
-    "arrow-body-style": "off", //要求箭头函数体使用大括号
-    "vue/no-setup-props-destructure": "off", //不允许对传递给setup的props进行解构
-    "no-restricted-syntax": "off", //禁用特定的语法
-    "max-len": "off", //强制一行的最大长度
-    "no-throw-literal": "off", //禁止抛出异常字面量
-    "prefer-destructuring": "off", //优先使用数组和对象解构
-    // "implicit-arrow-linebreak": "off",
-    "vue/multi-word-component-names": "off", //要求组件名称始终为多字
-    "spaced-comment": "off", // 强制在注释中 // 或 /* 使用一致的空格
-    "no-shadow": "off", //禁止变量声明与外层作用域的变量同名
-    "no-promise-executor-return": "off", //不能读取返回值为promise的函数，误报
-    "no-plusplus": "off", // 禁用一元操作符 ++ 和 --
-    "no-param-reassign": "off", //禁止对 function 的参数进行重新赋值
-    "no-new": "off", //禁止使用 new 以避免产生副作用
-    "no-console": "off", //不允许出现打印
-    "no-await-in-loop": "off", // 禁止在循环中出现 await
-    "import/prefer-default-export": "off", //禁止只有一个按需导出
-    "import/no-unresolved": "off", //无法解决路径模块，别名 @ 导致的
-    "import/extensions": "off", //需要补全文件后缀
-    "no-restricted-globals": "off", //未知错误
-    "no-unused-expressions": "off", //不能将方法用于三元运算符
+    eqeqeq: "warn", //要求使用 === 和 !==
+    "no-var": "warn", //不允许使用 var 关键字
+    "prefer-const": "warn", //要求使用 const 声明那些声明后不再被修改的变量
+    "@typescript-eslint/no-var-requires": "warn", //不允许使用 require() 函数导入模块
+    "@typescript-eslint/no-unused-vars": "warn", //不允许定义未使用的变量
+    "vue/v-slot-style": "warn", //强制使用 v-slot 指令的“name”属性值风格
+    "vue/attribute-hyphenation": "warn", //对模板中的自定义组件强制执行属性命名样式：my-prop="prop"
+    "vue/html-closing-bracket-newline": "warn", //禁止html闭标签>内换行
+    // "no-console": "warn", //不允许使用 console
 
-    "@typescript-eslint/no-unused-vars": "warn", //禁止使用var
-    "@typescript-eslint/ban-types": "off",
-    "@typescript-eslint/no-explicit-any": "off", //不允许使用any
-    "@typescript-eslint/no-empty-function": "off", //不允许空函数
-    "@typescript-eslint/no-non-null-assertion": "off", //禁止非空断言
-    "@typescript-eslint/no-namespace": "off", //禁止使用命名空间
+    "@typescript-eslint/ban-types": "off", //禁止使用指定的类型
+    "@typescript-eslint/no-explicit-any": "off", //禁止使用any类型
+    "@typescript-eslint/no-namespace": "off", //不允许在ts文件中使用命名空间
+    "@typescript-eslint/no-this-alias": "off", //禁止使用this别名
+    "typescript-eslint/no-this-alias": "off", //禁止使用this别名
+    "vue/custom-event-name-casing": "off", //为自定义事件名称强制使用特定大小写
+    "vue/multi-word-component-names": "off", //组件名称必须包含多个单词
+    "vue/no-template-shadow": "off", //禁止模板中的变量覆盖保留字
+    "vue/no-v-html": "off", //禁止使用v-html
+    "vue/require-default-prop": "off", //强制要求默认值
+    "vue/v-on-event-hyphenation": "off", //强制事件名称驼峰命名
+    "vue/require-prop-types": "off", //强制要求传入Prop的类型，实际上支持类型推导不需要传入
+
+    //import排序
+    "import/order": [
+      "warn",
+      {
+        groups: ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always",
+      },
+    ],
+    //属性排序
+    "vue/attributes-order": [
+      "warn",
+      {
+        order: [
+          "DEFINITION",
+          "LIST_RENDERING",
+          "CONDITIONALS",
+          "RENDER_MODIFIERS",
+          "GLOBAL",
+          "UNIQUE",
+          "TWO_WAY_BINDING",
+          "OTHER_DIRECTIVES",
+          "OTHER_ATTR",
+          "EVENTS",
+          "CONTENT",
+        ],
+      },
+    ],
   },
 };
-

@@ -4,6 +4,13 @@ import uni from "@dcloudio/vite-plugin-uni";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [uni()],
+  css: {
+    preprocessorOptions: {
+      less: {
+        additionalData: '@import "./src/styles/index.less";',
+      },
+    },
+  },
   server: {
     proxy: {
       "/api": {
