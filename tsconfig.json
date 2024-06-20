@@ -10,7 +10,7 @@
     "skipLibCheck": true,
     "target": "esnext",
     "noEmit": true,
-    "types": ["node", "vite/client"],
+    "types": ["node", "vite/client", "uview-plus/types"],
     "paths": {
       "@/*": ["./src/*"]
     }

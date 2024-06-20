@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import NavBar from "./components/NavBar/index.vue";
+</script>
 
 <template>
-  <view class="home"> 冷弋白 </view>
+  <view class="home">
+    <NavBar />
+  </view>
 </template>
 
 <style lang="less" scoped>

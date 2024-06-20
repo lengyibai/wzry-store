@@ -1,6 +1,16 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["dcloudio", "Pinia", "uniapp"],
-  "ignorePaths": ["node_modules", "*.json"]
+  "words": [
+    "dcloudio",
+    "iconfont",
+    "Pinia",
+    "sousuo",
+    "uniapp",
+    "uview"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "*.json"
+  ]
 }

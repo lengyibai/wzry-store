@@ -12,6 +12,9 @@ module.exports = {
     },
   ],
   rules: {
+    "import-notation": null,
+    "no-empty-source": null, //允许空文件
+    "unit-no-unknown": null, //未知单位
     "selector-class-pattern": null, //必须使用中划线命名
     "font-family-no-missing-generic-family-keyword": null, //禁止在字体族名称中使用缺少的通用系列关键字
     "no-descending-specificity": null, //禁止在特定的选择器和规则集中使用降序的选择器和规则集

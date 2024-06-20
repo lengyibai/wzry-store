@@ -3,7 +3,8 @@
     {
       "path": "pages/Home/index",
       "style": {
-        "navigationBarTitleText": "王者图鉴"
+        "navigationBarTitleText": "王者图鉴",
+        "navigationStyle": "custom"
       }
     },
     {
