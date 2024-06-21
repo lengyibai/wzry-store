@@ -31,6 +31,7 @@ module.exports = {
     "@typescript-eslint/ban-types": "off", //禁止使用指定的类型
     "@typescript-eslint/no-explicit-any": "off", //禁止使用any类型
     "@typescript-eslint/no-namespace": "off", //不允许在ts文件中使用命名空间
+    "@typescript-eslint/no-non-null-assertion": "off", //不允许非空断言
     "@typescript-eslint/no-this-alias": "off", //禁止使用this别名
     "typescript-eslint/no-this-alias": "off", //禁止使用this别名
     "vue/custom-event-name-casing": "off", //为自定义事件名称强制使用特定大小写

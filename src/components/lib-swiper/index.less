@@ -1,0 +1,47 @@
+.lib-swiper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 20rpx;
+
+  .swiper-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    .side-item {
+      flex-shrink: 0;
+      width: 100%;
+      height: 100%;
+
+      .img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .dot-list {
+    position: absolute;
+    left: 50%;
+    bottom: 20rpx;
+    display: flex;
+    transform: translateX(-50%);
+
+    .dot-item {
+      width: 16rpx;
+      height: 6rpx;
+      background-color: var(--white-50);
+      transition: 0.25s;
+
+      &:not(:last-child) {
+        margin-right: 10rpx;
+      }
+
+      &.active {
+        width: 40rpx;
+        background-color: var(--white);
+      }
+    }
+  }
+}
