@@ -1,0 +1,42 @@
+.lib-tab-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: var(--config-tab-bar-height);
+  padding: 0 20rpx;
+  border-radius: 35rpx 35rpx 0 0;
+  background-color: var(--white);
+  filter: drop-shadow(0 -5rpx 10rpx rgb(0 0 0 / 10%));
+  box-sizing: border-box;
+
+  .tab-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+
+    .iconfont {
+      margin-bottom: 10rpx;
+      font-size: 60rpx;
+    }
+
+    .label {
+      font-size: 30rpx;
+    }
+
+    &.active {
+      color: var(--blue);
+    }
+  }
+
+  .lottery {
+    position: relative;
+    width: 150rpx;
+    height: 150rpx;
+    border: 14rpx solid var(--white);
+    border-radius: 50%;
+    background-color: var(--blue);
+    transform: translateY(-36rpx);
+  }
+}

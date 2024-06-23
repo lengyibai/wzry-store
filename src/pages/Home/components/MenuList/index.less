@@ -1,24 +1,22 @@
 .menu-list {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26rpx;
+  height: 150rpx;
   margin-top: 30rpx;
-  margin-bottom: 26rpx;
 
   .menu-item {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    height: 100%;
+    border: 5rpx solid var(--black-25);
+    border-radius: 20rpx;
 
-    .icon {
-      width: 90rpx;
-      height: 90rpx;
-      margin-bottom: 10rpx;
+    &.nan {
+      background-color: var(--blue);
     }
 
-    .label {
-      color: var(--black-75);
-      font-size: 26rpx;
+    &.nv {
+      background-color: var(--red);
     }
   }
 }

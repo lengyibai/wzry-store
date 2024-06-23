@@ -9,17 +9,17 @@ onLoad(() => {
 </script>
 
 <template>
-  <view class="my">
+  <view class="epigraph">
     <div
       class="content"
       :style="{
         height: `calc(100vh - var(--config-tab-bar-height))`,
       }"
     >
-      我的
+      铭文
     </div>
 
-    <lib-tab-bar current-path="my" />
+    <lib-tab-bar current-path="epigraph" />
   </view>
 </template>
 

@@ -12,4 +12,8 @@ onHide(() => {
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="less">
+uni-page-body {
+  height: 100%;
+}
+</style>

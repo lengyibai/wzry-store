@@ -9,17 +9,17 @@ onLoad(() => {
 </script>
 
 <template>
-  <view class="my">
+  <view class="equip">
     <div
       class="content"
       :style="{
         height: `calc(100vh - var(--config-tab-bar-height))`,
       }"
     >
-      我的
+      装备
     </div>
 
-    <lib-tab-bar current-path="my" />
+    <lib-tab-bar current-path="equip" />
   </view>
 </template>
 

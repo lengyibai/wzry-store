@@ -12,16 +12,15 @@ const useDevice = () => {
 
   uni.getSystemInfo({
     success: (res) => {
-      // 获取手机顶部状态栏的高度
+      //获取胶囊按钮的布局位置信息
+      const { top, height } = uni.getMenuButtonBoundingClientRect();
+      //获取手机顶部状态栏的高度
       status_bar_height.value = res.statusBarHeight || 0;
-      // 获取导航栏的高度（手机状态栏高度 + 胶囊高度 + 胶囊的上下间距）
-      const menuButtonInfo = uni.getMenuButtonBoundingClientRect();
-      const navBarHeight =
-        menuButtonInfo.height + (menuButtonInfo.top - status_bar_height.value) * 2;
+
+      // 计算胶囊栏高度胶囊高度 + （胶囊顶部坐标 - 手机状态栏高度） * 2
+      const nav_bar_height = height + (top - status_bar_height.value) * 2;
       // 计算顶部图标距离
-      const topIconDistance = status_bar_height.value + navBarHeight;
-      // 打印顶部图标距离
-      app_nav_height.value = topIconDistance;
+      app_nav_height.value = status_bar_height.value + nav_bar_height;
     },
     fail: (err) => {
       console.error("获取系统信息失败:", err);

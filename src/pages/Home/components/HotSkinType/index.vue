@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <view class="lottery"></view>
+  <div class="hot-skin-type"></div>
 </template>
 
-<style lang="less" scoped>
+<style scoped lang="less">
 @import url("./index.less");
 </style>

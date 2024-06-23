@@ -9,17 +9,17 @@ onLoad(() => {
 </script>
 
 <template>
-  <view class="my">
-    <div
+  <view class="lottery">
+    <view
       class="content"
       :style="{
         height: `calc(100vh - var(--config-tab-bar-height))`,
       }"
     >
-      我的
-    </div>
+      夺宝
+    </view>
 
-    <lib-tab-bar current-path="my" />
+    <lib-tab-bar current-path="lottery" />
   </view>
 </template>
 

@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <view class="car"></view>
+  <view class="hot-camp"></view>
 </template>
 
-<style lang="less" scoped>
+<style scoped lang="less">
 @import url("./index.less");
 </style>
